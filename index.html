@@ -2,11 +2,12 @@
 <div class="grid-container">
   <div class="Header">Comparison thing</div>
   <div class="Screen1">
-    <button onclick="addFile('screen1')">+</button>
-    <p>Blah</p>
+    <input type="file" id="myFile1" onchange="fileChange('myFile1', 'screen1')"><br>
+    <textarea id="screen1" style="width:98%;min-height:150px;"></textarea>
   </div>
   <div class="Screen2">
-    <button onclick="addFile('screen2')">+</button>
-    <p>Blah</p>
+    <input type="file" id="myFile2" onchange="fileChange('myFile2', 'screen2')"><br>
+    <textarea id="screen2" style="width:98%;min-height:150px;"></textarea>
   </div>
 </div>
+<button onclick="UpdateComparison()">Compare</button>
